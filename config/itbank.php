@@ -2,6 +2,6 @@
 
 return [
     'base_url'      => 'https://api.itbank.com.br/api/v1/',
-    'Authorization' => 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJiNWZmODlkNi0zZDBhLTQ0ZmQtOGZmNC02NDNkMDFlMWVkZDAiLCJqdGkiOiJjNWQ1Y2VjMjlhZjM4MGM2NGUzNDY3ODE4MzdkYjM4ZDVlNjQwNzM0MzM4NTY5NjkzZmNhZGVkMDdjYWRiNzJmOGRiMDg0NWIwZTZiZTRkMSIsImlhdCI6MTU4MjMxNTc1OCwibmJmIjoxNTgyMzE1NzU4LCJleHAiOjE2MTM5MzgxNTgsInN1YiI6ImIzMjJiNTA5LWRiYmUtNGE5NC04YjJjLTQyZjRjNDE0MjBiZSIsInNjb3BlcyI6W119.jovQCcS5imdEsnLBk3Rm8E2jlkbCzUU4P_qY3ODGcrDg2jJb4Q2I4cC-kN2s21kc__f58X3RVZp0emR_dgMgeJ3TE3dnNGu2UQZzeDPi_FYWhXdLgDcZkuboIcBC-EbwmVOYparDy4A1hci5CAqKGy8E73nUxXt6Qpi3hPTU1B4Eqbqh88mRiC5yv9T5KEtB4F3rQHAb40rWmZ49rfpt-cnoIVrKx41oPCYj5oPiuy1AE4qvUvIJktoAd41T-jymz83gMXcuMWeo-RCdix5mVwGjyWDAamtNavPTHgDmf6coiP8z5rSNZCzsk1lYqc33-3_Lw79x-_PWTj3KMMSDjuJfievYW4Coy0pHXc59zKjCGXW5O59YENqQVmIpaXmJMIof7oLRo58Vqpv2sI_B7ezJitaXprBiJxdMYxXq-oS5BwMr9uBaBi6SdxDhyFqUPaDu65kYIrvFw0bDkVTh6Y9wRA9gJRFVwlXs2XCodJ3Lo-ea4lNCVXKN92VUifZGddDnMMCeMRE11NV1wyGqsdFVGlaNL9FF4Fh6apH07Hk_HZffDIUyI7pfgmOaY1xNRkADxR8zYSZA0s-ZvamW4eKksN5RfK0RiF9kjPP2aAuUE7s45WEvh3r1S479_cLPAWjwkV4U6zgSAizkIu61bbzj3hkRfDj2yQ4ivVDObLU',
-    'conta_id'      => '452540ad-cee2-400a-abe9-fcbeb3ca355a',
+    'Authorization' => 'Bearer '. env('Authorization'),
+    'conta_id'      => env('conta_id'),
 ];
