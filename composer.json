@@ -1,0 +1,22 @@
+{
+    "name": "bee-delivery/itbank",
+    "description": "Integração rápida e fácil com o itbank em PHP",
+    "authors": [
+        {
+            "name": "Chrystian Paulino",
+            "email": "chrystianpaulino@beedelivery.com.br",
+            "homepage": "https://www.itbank.com.br"
+        }
+    ],
+    "type": "library",
+    "license": "GPL-3.0-only",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.1.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "BeeDelivery\\ItBank\\": "src/"
+        }
+    }
+}
