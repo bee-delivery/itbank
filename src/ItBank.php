@@ -12,16 +12,16 @@ use BeeDelivery\ItBank\src\Usuario;
 class ItBank
 {
 
-    public function cliente($token) {
-        return new Cliente($token);
+    public function cliente($token, $token) {
+        return new Cliente($token, $token);
     }
 
-    public function transferencia($token) {
-        return new Transferencia($token);
+    public function transferencia($token, $token) {
+        return new Transferencia($token, $token);
     }
 
-    public function saldo($token) {
-        return new Saldo($token);
+    public function saldo($token, $token) {
+        return new Saldo($token, $token);
     }
 
 

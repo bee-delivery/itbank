@@ -8,17 +8,19 @@ class Connection {
 
     protected $http;
     protected $base_url;
-    protected $email;
     protected $token;
+    protected $conta;
 
-    public function __construct($token) {
+    public function __construct($token, $conta) {
 
         $this->base_url     = config('itbank.base_url');
         $this->token        = $token;
+        $this->conta        = $conta;
 
         $headers = [
             'Content-Type'  => 'application/json',
-            'Authorization' => 'Basic ' . $token
+            'Authorization' => 'Basic ' . $token,
+            'conta-id'      => $conta
         ];
 
         $this->http = new Client([
