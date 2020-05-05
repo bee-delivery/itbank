@@ -12,28 +12,17 @@ use BeeDelivery\ItBank\src\Usuario;
 class ItBank
 {
 
-    public function cliente($clienteEmail, $clienteToken) {
-        return new Cliente($clienteEmail, $clienteToken);
+    public function cliente($token) {
+        return new Cliente($token);
     }
 
-    public function transferencia($clienteEmail, $clienteToken) {
-        return new Transferencia($clienteEmail, $clienteToken);
+    public function transferencia($token) {
+        return new Transferencia($token);
     }
 
-    public function usuario($clienteEmail, $clienteToken) {
-        return new Usuario($clienteEmail, $clienteToken);
+    public function saldo($token) {
+        return new Saldo($token);
     }
 
-    public function saldo($clienteEmail, $clienteToken) {
-        return new Saldo($clienteEmail, $clienteToken);
-    }
-
-    public function contaBancaria($clienteEmail, $clienteToken) {
-        return new ContaBancaria($clienteEmail, $clienteToken);
-    }
-
-    public function tarifa($clienteEmail, $clienteToken) {
-        return new Tarifa($clienteEmail, $clienteToken);
-    }
 
 }
