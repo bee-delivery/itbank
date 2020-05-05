@@ -9,9 +9,9 @@ class Saldo
 
     public $http;
 
-    public function __construct($token)
+    public function __construct($token, $conta)
     {
-        $this->http = new Connection($token);
+        $this->http = new Connection($token, $conta);
     }
 
     /**

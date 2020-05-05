@@ -12,9 +12,9 @@ class Transferencia
     public $http;
     protected $transferencia;
 
-    public function __construct($clienteEmail = null, $clienteToken = null)
+    public function __construct($token, $conta)
     {
-        $this->http = new Connection($clienteEmail, $clienteToken);
+        $this->http = new Connection($token, $conta);
     }
 
     /**
