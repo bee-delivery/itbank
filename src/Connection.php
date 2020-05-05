@@ -19,8 +19,8 @@ class Connection {
 
         $headers = [
             'Content-Type'  => 'application/json',
-            'Authorization' => 'Basic ' . $token,
-            'conta-id'      => $conta
+            'Authorization' => 'Bearer ' . $this->token,
+            'conta-id'      => $this->conta
         ];
 
         $this->http = new Client([
@@ -32,6 +32,7 @@ class Connection {
 
     public function get($url)
     {
+        $response = $this->http->get($this->base_url . $url);
 
         try {
             $response = $this->http->get($this->base_url . $url);
