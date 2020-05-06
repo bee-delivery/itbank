@@ -32,8 +32,6 @@ class Connection {
 
     public function get($url)
     {
-        $response = $this->http->get($this->base_url . $url);
-
         try {
             $response = $this->http->get($this->base_url . $url);
 
