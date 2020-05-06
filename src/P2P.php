@@ -6,11 +6,11 @@ namespace BeeDelivery\ItBank\src;
 
 use BeeDelivery\ItBank\Connection;
 
-class Transferencia
+class P2P
 {
 
     public $http;
-    protected $transferencia;
+    protected $P2P;
 
     public function __construct($token, $conta)
     {
@@ -18,15 +18,15 @@ class Transferencia
     }
 
     /**
-     * Efetua uma transferência entre contas ItBank.
+     * Efetua uma transferência p2p entre contas ItBank.
      *
      * @see https://www.itbank.com.br/Help/Api/POST-api-v3-Transferencia
      * @param Array transferencia
      * @return Array
      */
-    public function criar($transferencia)
+    public function criar($P2P)
     {
-        return $this->http->post('api/v3/Transferencia', ['json' => $transferencia]);
+        return $this->http->post('p2p', ['json' => $P2P]);
     }
 
 }
